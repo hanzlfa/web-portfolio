@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/5cbb2f7157.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,20 +33,24 @@
                 <h1>Jihan Z</h1>
             </div>
 
-            <ul>
+            <ul id="menu-list" class="hidden">
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#e-certificate">E-Certificate</a></li>
                 <li><a href="#home">Contact</a></li>
             </ul>
+
+            <div id="menu-icon" class="menu-icon">
+                <i class="fa fa-bars"></i>
+              </div>
         </nav>
     </header>
 
     <main>
         <!-- BOX 1 -->
         <div class="box-1">
-            <img src="image/assets-1.png" alt="">
-            <h1 class="h">Hello!</h1>
+            <img src="image/assets-2.png">
+            <h1>Hello!</h1>
             <h1>I'm Jihan Zulfa</h1>
             <h2>A Design and Coding Enthusiast.</h2>
 
@@ -53,7 +58,6 @@
                 <button>Hire Me</button>
                 <button>Portfolio</button>
             </div>
-            <img src="image/assets-2.png" alt="">
         </div>
 
         <!-- BOX 2 -->
@@ -67,64 +71,179 @@
             <div class="about-me">
                 <h1 class="about">About Me</h1>
                 <p>A gapyear student from Aviation Vocational High School who determined to develop her personality,
-                    skills, and knowledge. I have interest at design such as Graphic Design, UI/UX Design and sometimes
+                    skills, and knowledge. I have interest at design such as <mark
+                        style="background-color: #73dbc4;">Graphic Design, UI/UX Design</mark> and sometimes
                     Interior Design too!</p>
                 <br>
-                I’m also a Coding Enthusiast, i have interest to be Front End Developer or Web Developer. Currently i
-                learn HTML & CSS.
+                I’m also a Coding Enthusiast, i have interest to be Front End Developer or Web Developer. Currently i'm
+                learning <mark style="background-color: #73dbc4;">HTML & CSS</mark>.
                 </p>
             </div>
         </div>
 
+
         <!-- BOX 3 -->
         <div class="box-3" id="portfolio">
-            <img class="assets-3" src="image/assets-3.png">
             <h1>Portfolio
                 <br>& Projects!
             </h1>
 
-        <div id="projects">
-            <!-- PORTFOLIO 1 -->
-            <article class="card">
-                <img src="image/portfolio-1.png">
-                <button>Graphic Design</button>
-                <h3>Portfolio Design 2023</h3>
-                <button>View Portfolio</button>
-            </article>
+            <div class="container">
+                <div class="content">
+                    <div class="projects">
+                        <!-- PORTFOLIO 1 -->
+                        <article class="card">
+                            <img src="image/portfolio-1.png">
+                            <button>Graphic Design</button>
+                            <h3>Portfolio Design 2023</h3>
+                            <button>View Portfolio</button>
+                        </article>
 
-            <!-- PORTFOLIO 2 -->
-            <article class="card">
-                <img src="image/portfolio-2.png">
-                <button>UI/UX Design</button>
-                <h3>E-Voting KPU App</h3>
-                <button>View Portfolio</button>
-            </article>
+                        <!-- PORTFOLIO 2 -->
+                        <article class="card">
+                            <img src="image/portfolio-2.png">
+                            <button>UI/UX Design</button>
+                            <button style="background-color: #ecf7fa;">Dibimbing</button>
+                            <h3>E-Voting KPU App</h3>
+                            <button>View Portfolio</button>
+                        </article>
 
-            <!-- PORTFOLIO 3 -->
-            <article class="card">
-                <img src="image/portfolio-3.png">
-                <button>Web Development</button>
-                <h3>Female News Website</h3>
-                <button>View Portfolio</button>
-            </article>
+                        <!-- PORTFOLIO 3 -->
+                        <article class="card">
+                            <img src="image/portfolio-3.png">
+                            <button>Web Development</button>
+                            <button style="background-color: #e6efff;">Harisenin</button>
+                            <h3>Female News Website</h3>
+                            <button>View Portfolio</button>
+                        </article>
 
-            <!-- PORTFOLIO 4 -->
-            <article class="card">
-                <img src="image/portfolio-4.png">
-                <button>Web Development</button>
-                <h3>Redesign Web Kota Tangerang</h3>
-                <button>View Portfolio</button>
-            </article>
+                        <!-- PORTFOLIO 4 -->
+                        <article class="card">
+                            <img src="image/portfolio-4.png">
+                            <button>Web Development</button>
+                            <button style="background-color: #e8eaec;">Dicoding</button>
+                            <h3>Redesign Web Kota Tangerang</h3>
+                            <button>View Portfolio</button>
+                        </article>
 
-            <article class="card">
-                <img src="image/portfolio-5.jpeg">
-                <button>Web Development</button>
-                <h3>Han's Interior Design Website</h3>
-                <button>View Portfolio</button>
-            </article>
+                        <!-- PORTFOLIO 5 -->
+                        <article class="card">
+                            <img src="image/portfolio-5.jpeg">
+                            <button>Web Development</button>
+                            <button style="background-color: #fffcef;">Revou</button>
+                            <h3>Han's Interior Design Website</h3>
+                            <button>View Portfolio</button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOX 4 -->
+        <div class="box-4" id="e-certificate">
+            <h1>My
+                <br>e-Certificates?!</h1>
+
+            <div class="container">
+                <div class="projects">
+                    <article class="card">
+                        <img src="image/certificate-1.jpg">
+                        <button>Graphic Design</button>
+                        <button style="background-color: #ebf4f5;">MySkill</button>
+                        <h3>Designing Using Canva</h3>
+                        <button>View Certificate</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="image/certificate-2.jpg">
+                        <button>Graphic Design</button>
+                        <button style="background-color: #ebf4f5;">MySkill</button>
+                        <h3>Graphic Design Principal</h3>
+                        <button>View Certificate</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="image/certificate-3.jpg">
+                        <button>Graphic Design</button>
+                        <button style="background-color: #e8f0fe;">Tempat Belajar</button>
+                        <h3>Mini Course Graphic Design</h3>
+                        <button>View Certificate</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="image/certificate-4.jpg">
+                        <button>UI/UX Design</button>
+                        <button style="background-color: #ebf4f5;">MySkill</button>
+                        <h3>UI/UX Fundamental</h3>
+                        <button>View Certificate</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="image/certificate-5.jpg">
+                        <button>UI/UX Design</button>
+                        <button style="background-color: #ebf4f5;">MySkill</button>
+                        <h3>Wireframing in UI/UX</h3>
+                        <button>View Certificate</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="image/certificate-6.jpg">
+                        <button>UI/UX Design</button>
+                        <button style="background-color: #ecf7fa;">Dibimbing</button>
+                        <h3>Product Series 1.0</h3>
+                        <button>View Certificate</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="image/certificate-7.jpg">
+                        <button>Web Development</button>
+                        <button style="background-color: #ebf4f5;">MySkill</button>
+                        <h3>Introduction to HTML</h3>
+                        <button>View Certificate</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="image/certificate-8.jpg">
+                        <button>Web Development</button>
+                        <button style="background-color: #fffcef;">Revou</button>
+                        <h3>Designing Using Canva</h3>
+                        <button>View Certificate</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="image/certificate-9.jpg">
+                        <button>Web Development</button>
+                        <button style="background-color: #e8eaec;">Dicoding</button>
+                        <h3>Belajar Dasar Pemrograman Web</h3>
+                        <button>View Certificate</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="image/certificate-10.jpg">
+                        <button>Web Development</button>
+                        <button style="background-color: #e6efff;">Harisenin</button>
+                        <h3>Coding Camp "Exploring Front-End Developer: Wonders and Oppurtunities"</h3>
+                        <button>View Certificate</button>
+                    </article>
+                </div>
+            </div>
         </div>
     </main>
 
+    <footer class="box-5">
+        <img src="image/assets-1.png">
+        <h1>Thank You For
+            <br>Visit My Page!
+        </h1>
+        <h2>Let's Get In Touch With Me~</h2>
+        <ul>
+            <li><a href="https://www.instagram.com/hanzlfa"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jihan-zulfa"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/hanzlfa"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
