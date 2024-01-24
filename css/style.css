@@ -34,17 +34,22 @@ body {
   font-weight: 900;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+}
 nav {
   display: flex;
   background-color: var(--white-color);
   justify-content: space-between;
   align-items: center;
   padding: 24px 90px;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
   position: sticky;
   top: 0;
   border-bottom: 3px solid black;
-  z-index: 2;
 }
 
 nav ul {
@@ -279,12 +284,10 @@ nav ul li a:hover {
 }
 
 .projects button:last-child:hover {
-  border: 3px solid black;
   box-shadow: 1px 2px 0px #000;
   cursor: pointer;
   font-weight: 700;
   transition: all 0.25s ease;
-  scale: 1.05;
 }
 
 /* box 4 */
@@ -356,7 +359,7 @@ footer img {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 24px 40px;
+    padding: 15px 30px;
   }
 
   nav ul {
@@ -368,7 +371,7 @@ footer img {
     right: 0;
     width: 100%;
     background-color: var(--white-color);
-    height: 400px;
+    height: 300px;
     justify-content: space-evenly;
   }
 
@@ -443,6 +446,15 @@ footer img {
   .my-profile span {
     font-size: 16px;
   }
+
+  .box-1 h1, .box-2 h1, .box-3 h1, .box-4 h1, .box-5 h1 {
+    font-size: 60px;
+    line-height: 45px;
+  }
+
+  .my-profile h1 {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -487,11 +499,23 @@ footer img {
     padding: 13px;
   }
 
+  .projects h3 {
+    font-size: 13px;
+  }
+
+  .projects button {
+    font-size: 8px;
+  }
+
+  .projects button:last-child {
+    font-size: 10px;
+  }
+
   .card img {
     height: 168px;
   }
 
-  .card {
+  .box-1 button, .card, .projects button:last-child, footer ul li i{
     border: 2px solid black;
   }
   .box-4 img {
@@ -501,6 +525,7 @@ footer img {
   .box-5 {
     padding: 65px 0;
   }
+
 }
 
 @media screen and (max-width: 390px) {
